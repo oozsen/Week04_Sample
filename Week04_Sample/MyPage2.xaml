@@ -15,5 +15,7 @@
                Text="{Binding Value, StringFormat='{0:F0}'}"
                VerticalOptions="Center"/>
 
+       <Button Text="Back" x:Name="btnBack" Clicked="btnBack_Clicked" />
+
     </StackLayout>
 </ContentPage>

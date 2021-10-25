@@ -11,5 +11,12 @@ namespace Week04_Sample
         {
             InitializeComponent();
         }
+
+        void btnBack_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PopAsync();                   
+        }
+
+        
     }
 }

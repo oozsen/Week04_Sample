@@ -26,7 +26,12 @@ namespace Week04_Sample
 
         void btnClick_Clicked(System.Object sender, System.EventArgs e)
         {
-            Navigation.PushModalAsync(new MyPage2());
+            Navigation.PushAsync(new MyPage2());
+        }
+
+        void btnClose_Clicked(System.Object sender, System.EventArgs e)
+        {
+            System.Environment.Exit(0);
         }
     }
 }

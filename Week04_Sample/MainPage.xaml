@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Week04_Sample.MainPage">
+             x:Class="Week04_Sample.MainPage"
+             NavigationPage.HasNavigationBar="False">
 
     <StackLayout>
         <Frame BackgroundColor="HotPink" Padding="24" CornerRadius="0">
@@ -14,6 +15,10 @@
 
         <Button x:Name="btnClick" Text="Click me"
                 Clicked="btnClick_Clicked"
+                HorizontalOptions="Center" />
+
+        <Button x:Name="btnClose" Text="Close App"
+                Clicked="btnClose_Clicked"
                 HorizontalOptions="Center" />
     </StackLayout>
 
