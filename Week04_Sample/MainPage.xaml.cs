@@ -23,5 +23,10 @@ namespace Week04_Sample
         public string Hello2 { get; set; } = "Mobile Programming 1 Course";
 
         public string CengLink { get; set; } = "ceng.eskisehir.edu.tr";
+
+        void btnClick_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushModalAsync(new MyPage2());
+        }
     }
 }

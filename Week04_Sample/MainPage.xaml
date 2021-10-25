@@ -8,10 +8,13 @@
             <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
 
-
         <Label Text="{Binding Hello}" FontSize="Title" Padding="30,10,30,10" />
         <Label Text="{Binding Hello2}" FontSize="16" Padding="30,0,30,0" />
         <Entry Text="{Binding CengLink}" />
+
+        <Button x:Name="btnClick" Text="Click me"
+                Clicked="btnClick_Clicked"
+                HorizontalOptions="Center" />
     </StackLayout>
 
 </ContentPage>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Week04_Sample.MyPage2">
+    <StackLayout>
+        <Label FontSize="26" HorizontalOptions="Center"
+               Text="MyPage2"
+               VerticalOptions="Center" />
+
+        <Slider x:Name="slider1" Minimum="0" Maximum="100" Value="50"
+                VerticalOptions="Center"/>
+
+        <Label BindingContext="{x:Reference slider1}"
+               Text="{Binding Value, StringFormat='{0:F0}'}"
+               VerticalOptions="Center"/>
+
+    </StackLayout>
+</ContentPage>
